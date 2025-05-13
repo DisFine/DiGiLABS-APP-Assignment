@@ -3,6 +3,10 @@
   margin: 0;
 }
 
+html {
+  font-family: 'Geist', sans-serif;
+}
+
 body {
   overflow-x: hidden;
 }
@@ -135,12 +139,12 @@ body {
 
 .Card {
   flex-direction: row;
-  gap: 64px;
+  gap: 64px 0px;
   width: 100%;
   height: 656px;
   padding: 48px 0px 80px;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
 }
 
 .Base {
@@ -150,6 +154,7 @@ body {
   padding: 0px;
   gap: 64px;
   width: 550px;
+  margin-top: auto;
 }
 
 .Base-container1 {
@@ -179,7 +184,7 @@ body {
 }
 
 .Base-h1 {
-  font-size: 60px;
+  font-size: 50px;
 }
 
 .Base-p {
@@ -478,10 +483,10 @@ body {
 
 .Blog-Container {
   display: grid;
-  grid-template-columns: repeat(3, 400px);
+  grid-template-columns: repeat(3, 1fr);
   justify-content: center;
+  justify-items: center;
   margin-top: 3.5%;
-  column-gap: 20px;
 }
 
 .blog-img {
@@ -490,7 +495,6 @@ body {
 }
 
 .Blog-Inside-Container {
-  padding: 10px;
   width: min-content;
   display: flex;
   flex-direction: column;
@@ -647,7 +651,7 @@ body {
 
 .footer-top {
   display: grid;
-  grid-template-columns: repeat(4, 350px);
+  grid-template-columns: repeat(4, 1fr);
   justify-items: center;
   justify-content: center;
   margin-bottom: 30px;
@@ -742,9 +746,9 @@ body {
   display: none;
 }
 
-@media (max-width: 1200px) {
+@media (max-width: 1250px) {
   .Hero {
-    height: 1375px;
+    height: 1234px;
   }
 
   .Page-Header {
@@ -761,14 +765,17 @@ body {
   }
 
   .Card {
+    justify-content: flex-end;
     flex-direction: column-reverse;
     align-items: center;
+    height: 100%;
+    padding: 0;
   }
 
   .graphic {
     display: flex;
     justify-content: center;
-    height: 100%;
+    height: 45%;
   }
 
   .Base-container1 {
@@ -781,6 +788,7 @@ body {
 
   .Base {
     width: 630px;
+    margin: 0;
   }
 
   .icon {
@@ -802,7 +810,7 @@ body {
   }
 
   .Features {
-    height: 1250px;
+    height: fit-content;
   }
 
   .LeftRight,
@@ -905,11 +913,14 @@ body {
     width: auto;
     height: 260px;
   }
+  .Block-Header {
+    text-align: center;
+  }
 }
 
 @media (max-width: 700px) {
   .Hero {
-    height: 1000px;
+    height: fit-content;
   }
 
   .Page-Header {
@@ -939,12 +950,14 @@ body {
     align-items: center;
   }
 
-  .graphic {
-    height: 50%;
+  .Graphic-Image {
+    width: 100%;
+    height: auto;
   }
 
   .Card {
     padding: 0px;
+    padding-bottom: 40px;
   }
 
   .Base {
