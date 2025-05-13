@@ -23,7 +23,7 @@ export const fetchToken = async () => {
     const fcmMessaging = await messaging();
     if (fcmMessaging) {
       const token = await getToken(fcmMessaging, {
-        vapidKey: process.env.NEXT_PUBLIC_FIREBASE_FCM_VAPID_KEY,
+        vapidKey: "BEZxdCPkw9tWQURrElmj4td6nJsjKIkcPb3UGcPszMWcid7iIzsy-5lqF_I76yx_VhjJlsi9qDBIhncT-GnJRwA",
       });
       return token;
     }
