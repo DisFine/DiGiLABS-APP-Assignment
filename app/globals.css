@@ -994,7 +994,7 @@ body {
   }
 
   .Features {
-    height: 1500px;
+    height: 1550px;
   }
 
   .Features-h2 {
@@ -1012,11 +1012,11 @@ body {
   }
 
   .LeftRight {
-    height: 1100px;
+    height: fit-content;
   }
 
   .RightLeft {
-    height: 1050px;
+    height: fit-content;
   }
 
   .LeftRight-h2 {
